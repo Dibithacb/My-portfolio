@@ -34,7 +34,8 @@
         </section>
         <!-- Project details -->
         <section id="project">
-            <h2>Projects</h2>
+            <header><h2>Projects</h2></header>
+            
             <h4>Human Resource Management System(HRMS)</h4>
             <p>
                 Developed a comprehensive interface from scratch, featuring role-based access for both users and admins.
@@ -78,18 +79,21 @@
         <!-- contact me form -->
         <section id="contact">
             <h3>Contact Me</h3>
-            <form action="#" method="post">
+            <form>
                 <label for="name">Your Name:</label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" minlength="3" maxlength="15" placeholder="Enter your name.. " required>
+                <br><br>
+                <label for="phone">Phone number: (Eg, 987-654-3210)</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your Phone number.. " pattern="\d{3}-\d{3}-\d{4}" required>
                 <br><br>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" placeholder="Enter your email Id.. " required>
                 <br><br>
                 <label for="subject">Subject:</label>
-                <textarea name="subject" id="subject" cols="30" rows="2"></textarea>
+                <textarea name="subject" id="subject" cols="30" rows="2" placeholder="Enter subject.. " required></textarea>
                 <br><br>
                 <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message.. " required></textarea>
                 <br><br>
                 <button type="submit">Submit</button>
             </form>
